@@ -6,7 +6,7 @@ import React from 'react';
 const NavBar = () => {
     return (
         <nav className="bg-gray-800 p-4 text-white">
-            <ul className="flex flex-wrap justify-center sm:justify-start space-x-4">
+            <ul className="flex flex-wrap justify-start md:justify-center space-x-4">
                 <li>
                     <Link href="/" className="hover:underline text-sm sm:text-base">
                         Home
