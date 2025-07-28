@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import React, { useState } from "react";
 import { useRouter } from 'next/navigation';
+import Link from "next/link";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = useState("");
@@ -26,7 +27,7 @@ export default function ForgotPasswordPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
 
       <header className="w-full bg-gray-800 text-white py-2 px-4 text-sm">
-        Step 1: Reset Password Screen
+        Step 1: Reset Password Screen 
       </header>
 
 

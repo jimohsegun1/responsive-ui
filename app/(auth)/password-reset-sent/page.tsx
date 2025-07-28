@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 import { useRouter } from 'next/navigation';
+import Link from "next/link";
 
 export default function PasswordResetSentPage() {
   const router = useRouter();

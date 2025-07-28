@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import React, { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from 'next/navigation';
+import Link from "next/link";
 
 export default function SetNewPasswordPage() {
   const [newPassword, setNewPassword] = useState("");
@@ -55,7 +56,7 @@ export default function SetNewPasswordPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="w-full bg-gray-800 text-white py-2 px-4 text-sm">
-        Step 3: Set New Password
+        Step 3: Set New Password 
       </header>
 
       <main className="flex flex-grow justify-center items-center py-8 px-4">

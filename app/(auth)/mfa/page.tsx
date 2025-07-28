@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import React, { useState, useRef, useEffect } from "react";
 import { useRouter } from 'next/navigation';
+import Link from "next/link";
 
 export default function MFAPage() {
   const [otp, setOtp] = useState<string[]>(["", "", "", "", ""]);
@@ -60,7 +61,7 @@ export default function MFAPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="w-full bg-gray-800 text-white py-2 px-4 text-sm">
-        Step 2: Multi-Factor Authentication (MFA)
+        Step 2: Multi-Factor Authentication (MFA) 
       </header>
 
       <main className="flex flex-grow justify-center items-center py-8 px-4">

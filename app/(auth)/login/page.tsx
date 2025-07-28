@@ -23,7 +23,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <header className="w-full bg-gray-800 text-white py-2 px-4 text-sm">
-        Step 1: Login Screen
+        Step 1: Login Screen 
       </header>
 
       <main className="flex flex-grow justify-center items-center py-8 px-4">
