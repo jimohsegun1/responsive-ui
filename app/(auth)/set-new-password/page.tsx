@@ -60,7 +60,7 @@ export default function SetNewPasswordPage() {
       </header>
 
       <main className="flex flex-grow justify-center items-center py-8 px-4">
-        <div className="w-full max-w-xl bg-white p-8 rounded-lg shadow-md">
+        <div className="w-full max-w-xl p-8 rounded-lg">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">
             Set a New Password
           </h1>
