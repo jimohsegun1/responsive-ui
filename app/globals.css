@@ -1,8 +1,104 @@
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.custom-focus:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #10b981;
-    /* Emerald color */
+
+@layer base {
+  :root {
+    /* All Shadcn UI Colors Converted to Hex */
+    --background: #FFFFFF; /* HSL: 0 0% 100% */
+    --foreground: #00544E; /* HSL: 168 47% 20% (Using p23Green as foreground) */
+
+    --muted: #F0F4F7; /* HSL: 210 40% 96.1% */
+    --muted-foreground: #677380; /* HSL: 215.4 16.3% 46.9% */
+
+    --popover: #FFFFFF; /* HSL: 0 0% 100% */
+    --popover-foreground: #00544E; /* HSL: 168 47% 20% (Using p23Green) */
+
+    --border: #E5EAF0; /* HSL: 214.3 31.8% 91.4% */
+    --input: #E5EAF0; /* HSL: 214.3 31.8% 91.4% */
+    --card: #FFFFFF; /* HSL: 0 0% 100% */
+    --card-foreground: #00544E; /* HSL: 168 47% 20% (Using p23Green) */
+
+    --primary: #00544E; /* HSL: 168 47% 20% (p23Green) */
+    --primary-foreground: #FFFFFF; /* HSL: 0 0% 100% */
+
+    --secondary: #F0F4F7; /* HSL: 210 40% 96.1% */
+    --secondary-foreground: #00544E; /* HSL: 168 47% 20% (Using p23Green) */
+
+    --accent: #F0F4F7; /* HSL: 210 40% 96.1% */
+    --accent-foreground: #00544E; /* HSL: 168 47% 20% (Using p23Green) */
+
+    --destructive: #EB3A3A; /* HSL: 0 84.2% 60.2% */
+    --destructive-foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --ring: #00544E; /* HSL: 168 47% 20% (Using p23Green) */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Shadcn UI Dark Mode Colors Converted to Hex */
+    --background: #0D1117; /* HSL: 224 71.4% 4.1% */
+    --foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --muted: #212A35; /* HSL: 215 27.9% 16.9% */
+    --muted-foreground: #9AA9B4; /* HSL: 217.9 10.6% 64.5% */
+
+    --popover: #111827; /* HSL: 216 34% 10.2% */
+    --popover-foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --border: #111827; /* HSL: 216 34% 10.2% */
+    --input: #111827; /* HSL: 216 34% 10.2% */
+    --card: #111827; /* HSL: 216 34% 10.2% */
+    --card-foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --primary: #3B82F6; /* HSL: 217.2 91.2% 59.8% */
+    --primary-foreground: #00544E; /* HSL: 168 47% 20% (Using p23Green) */
+
+    --secondary: #212C3A; /* HSL: 217.2 32.6% 17.5% */
+    --secondary-foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --accent: #212C3A; /* HSL: 217.2 32.6% 17.5% */
+    --accent-foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --destructive: #8F1414; /* HSL: 0 62.8% 30.6% */
+    --destructive-foreground: #F7FAFC; /* HSL: 210 40% 98% */
+
+    --ring: #3B82F6; /* HSL: 217.2 91.2% 59.8% */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    /* font-family: sans-serif; */
+    font-family: 'Montserrat', sans-serif; /* Apply Montserrat globally */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    /* Apply a default font weight or style if needed */
+  }
+}
+
+/* Custom utility classes if needed, e.g., for background patterns */
+.bg-grainy {
+  background-image: url('/background-image.png'); /* General grainy texture */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-hero-desktop {
+  background-image: url('/hero-background-image.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-hero-mobile {
+  background-image: url('/mobile-hero-background-image.png');
+  background-size: cover;
+  background-position: center;
 }

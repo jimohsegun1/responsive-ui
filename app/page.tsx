@@ -1,20 +1,15 @@
-import Link from "next/link";
-import React from "react";
+import { HeroSection } from "@/components/HeroSection";
+import { UpcomingEvents } from "@/components/UpcomingEvents";
 
-const page = () => {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <header className="w-full bg-gray-800 text-white py-2 px-4 text-sm">
-        PharmMar Homepage 
-      </header>
-
-      <main className="flex flex-grow justify-center items-center">
-        <div className="text-center text-3xl font-bold text-gray-800">
-          PharmMar Homepage
-        </div>
-      </main>
+    <div className="flex flex-col min-h-screen">
+      <section id="hero">
+        <HeroSection />
+      </section>
+      <section id="our-events">
+        <UpcomingEvents />
+      </section>
     </div>
   );
-};
-
-export default page;
+}

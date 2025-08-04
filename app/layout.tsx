@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import Navbar from "@/components/Navbar";
+// import { Inter } from "next/font/google"; // Or your preferred font
+import { Montserrat } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+
+// const inter = Inter({ subsets: ["latin"] }); // Replace with your actual font if different
+const montserrat = Montserrat({ subsets: ["latin"] }); 
 
 export const metadata: Metadata = {
-  title: "Ecommerce | Next App",
-  description: "ecommerce app built with next js",
+  title: "P23 Africa - Gaining Knowledge Through Connection",
+  description: "Explore upcoming events tailored to equip, connect, and empower businesses across Africa and beyond.",
 };
 
 export default function RootLayout({
@@ -18,10 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      {/* <body className={inter.className}> */}
+      <body className={montserrat.className}>
         <Navbar />
-        {children}
-        <Toaster />
+        <main>{children}</main> 
+        <Footer />
       </body>
     </html>
   );
