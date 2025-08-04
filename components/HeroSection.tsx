@@ -1,4 +1,7 @@
 import Image from "next/image";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 export function HeroSection() {
   return (
@@ -12,7 +15,7 @@ export function HeroSection() {
         className="container mx-auto relative z-10 flex flex-col items-center justify-center
                       md:flex md:flex-row md:items-center md:gap-8 px-6 md:px-12"
       >
-        <div className="hidden md:flex justify-center items-center w-full md:w-5/12 flex-shrink-0">
+        <div data-aos="slide-right" className="hidden md:flex justify-center items-center w-full md:w-5/12 flex-shrink-0">
           <div className="relative w-full h-[570px]">
             <Image
               src="/hero-image-1.png"
@@ -26,14 +29,14 @@ export function HeroSection() {
         </div>
 
         <div className="w-full text-center md:text-left mt- md:mt-0 relative z-20 md:w-7/12 flex-grow">
-          <h1 className="text-3xl lg:text-5xl font-extrabold text-p23Green leading-tight">
+          <h1 data-aos="slide-down" className="text-3xl lg:text-5xl font-extrabold text-p23Green leading-tight">
             Gaining Knowledge
           </h1>
-          <h1 className="text-3xl lg:text-5xl font-light md:font-extralight text-green-900 leading-tight mb- md:mb-0">
+          <h1 data-aos="slide-down" className="text-3xl lg:text-5xl font-light md:font-extralight text-green-900 leading-tight mb- md:mb-0">
             Through Connection.
           </h1>
 
-          <div className="relative w-full max-w-full mx-auto md:mx-0 h-[500px] md:h-[px] mt- md:mt-0">
+          <div data-aos="slide-left" className="relative w-full max-w-full mx-auto md:mx-0 h-[500px] md:h-[px] mt- md:mt-0">
             <div className="hidden md:block absolute inset-0">
               <Image
                 src="/hero-image-2.png"
