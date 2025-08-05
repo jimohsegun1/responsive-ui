@@ -103,7 +103,7 @@ const EventCard: React.FC<{
         {variant === "transparent" ? (
           <Button
             variant="outline"
-            className="rounded-xl border-2 border-p23Green text-p23Green hover:bg-p23Green hover:text-white w-full sm:w-auto"
+            className="rounded-xl border- border-p23Green text-p23Green hover:bg-p23Green hover:text-white w-full sm:w-auto"
           >
             See All Events <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -111,7 +111,7 @@ const EventCard: React.FC<{
           <>
             <div className="flex w-full gap-3"> {/* Flex container for buttons */}
               <Button
-                className={`rounded-xl px-5 py-2 border-2 flex items-center gap-2 w-full sm:w-auto
+                className={`rounded-xl px-5 py-2 border- flex items-center gap-2 w-full sm:w-auto
             ${variant === "green"
                     ? "bg-p23Green text-white border-white hover:bg-p23Green/90"
                     : "bg-transparent text-p23Green border-p23Green hover:bg-p23Green hover:text-white"
