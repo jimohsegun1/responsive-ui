@@ -61,12 +61,12 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-14">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="text-base hover:text-p23Lime transition-colors whitespace-nowrap"
+                  className="text-sm leading-7 hover:text-p23Lime transition-colors whitespace-nowrap font-gt-walsheim"
                 >
                   {link.name}
                 </Link>
@@ -77,7 +77,7 @@ export function Navbar() {
           <div className="flex items-center space-x-6 flex-shrink-0">
             <Button
               variant="outline"
-              className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-p23Green px-6 py-2 rounded-xl font-semibold text-sm flex items-center gap-2 transition-colors transform hover:scale-105"
+              className="bg-transparent text-white border- border-white hover:bg-white hover:text-p23Green px-3 py-2 rounded-xl font-semibold text-xs flex items-center gap-2 ml-4 transition-colors transform hover:scale-105"
             >
               Subscribe <ArrowRight className="h-4 w-4" />
             </Button>

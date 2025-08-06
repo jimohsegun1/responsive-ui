@@ -83,6 +83,10 @@
   }
 }
 
+.font-gt-walsheim {
+  font-family: 'GT Walsheim Trial', sans-serif; /* Fallback to sans-serif */
+}
+
 /* Custom utility classes if needed, e.g., for background patterns */
 .bg-grainy {
   background-image: url('/background-image.png'); /* General grainy texture */
@@ -99,6 +103,11 @@
 
 .bg-hero-mobile {
   background-image: url('/mobile-hero-background-image.png');
+  background-size: cover;
+  background-position: center;
+}
+.bg-mobile {
+  background-image: url('/mobile-background-image-2.png');
   background-size: cover;
   background-position: center;
 }
