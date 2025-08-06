@@ -77,11 +77,7 @@ export function Navbar() {
           <div className="flex items-center space-x-6 flex-shrink-0">
             <Button
               variant="outline"
-<<<<<<< HEAD
-              className="bg-transparent text-white border- border-white hover:bg-white hover:text-p23Green px-3 py-2 rounded-xl font-semibold text-xs flex items-center gap-2 ml-4 transition-colors transform hover:scale-105"
-=======
               className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-p23Green px-3 py-2 rounded-xl font-semibold text-xs flex items-center gap-2 ml-4 transition-colors transform hover:scale-105"
->>>>>>> d9ab7b8a41d89d0ce5190cc76adb0300edc6f765
             >
               Subscribe <ArrowRight className="h-4 w-4" />
             </Button>
