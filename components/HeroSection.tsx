@@ -13,10 +13,10 @@ export function HeroSection() {
 
       <div
         className="container mx-auto relative z-10 flex flex-col items-center justify-center
-                      md:flex md:flex-row md:items-center md:gap-16 px-6 md:px-12"
+                      md:flex md:flex-row md:items-center md:gap-16 px-6"
       >
         <div data-aos="slide-right" className="hidden md:flex justify-center items-center w-full md:w-5/12 flex-shrink-0">
-          <div className="relative w-full h-[700px]">
+          <div className="relative w-full h-[600px]">
             <Image
               src="/hero-image-1.png"
               alt="Decorative geometric shapes"
@@ -32,7 +32,7 @@ export function HeroSection() {
           <h1 data-aos="slide-down" className="text-3xl lg:text-5xl font-extrabold text-p23Green leading-tight md:mt-">
             Gaining Knowledge
           </h1>
-          <h1 data-aos="slide-down" className="text-3xl lg:text-5xl font-light md:font-extralight text-green-900 leading-tight mb- md:mb-8">
+          <h1 data-aos="slide-down" className="text-3xl lg:text-5xl font-light md:font-extralight text-green-900 leading-tight mb- md:mb-0">
             Through Connection.
           </h1>
 
