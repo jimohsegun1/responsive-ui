@@ -15,7 +15,7 @@ export function Footer() {
     <>
       <div className="bg-white h-4 w-full" /> {/* White Section Above Footer */}
       <footer className="bg-p23Green-dark text-white py-12 md:py-16">
-        <div className="container mx-auto px-6 md:px-12 xl:px-24">
+        <div className="container mx-auto px-6 md:px-12 xl:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
 
             <div>
@@ -81,10 +81,11 @@ export function Footer() {
                   placeholder="Enter your email"
                   className="w-full border border-[#C2E94E] bg-transparent text-sm text-white placeholder:text-gray-500 rounded-md px-4 py-2 focus-visible:ring-offset-0 focus-visible:ring-2 focus-visible:ring-[#C2E94E]"
                 />
-                <Button className="bg-[#C2E94E] text-[#013229] hover:bg-[#C2E94E]/90 px-6 py-2 rounded-md flex items-center gap-2 font-gt-walsheim">
+                <Button className="bg-[#C2E94E] text-[#013229] hover:bg-[#C2E94E]/90 mr-24 px- py-2 rounded-md flex items-center justify-start gap-2 font-gt-walsheim">
                   Subscribe <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>
+              
             </div>
           </div>
 
