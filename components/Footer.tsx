@@ -90,7 +90,7 @@ export function Footer() {
 
           {/* Footer Bottom */}
 
-          <div className="mt-12 pt-8 border-t border-gray-700 text-center text-base font-normal text-white justify-self-end leading-6 opacity-100 font-georgia">
+          <div className="mt-12 pt-8 text-center text-base font-normal text-white justify-self-end leading-6 opacity-100 font-georgia">
             &copy;  P23 Africa 2025 &nbsp;•&nbsp;{" "}
             <Link href="#" className="hover:text-p23Lime">Privacy Policy</Link> &nbsp;•&nbsp;{" "}
             <Link href="#" className="hover:text-p23Lime">Terms & Conditions</Link>
