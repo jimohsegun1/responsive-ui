@@ -53,7 +53,7 @@ export function Navbar() {
   );
 
   return (
-    <nav className="bg-p23Green text-white py-4 px-6 md:px-12 shadow-md">
+    <nav className="bg-p23Green text-white py-4 px-6 md:px-12 shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <Logo />
@@ -164,6 +164,7 @@ export function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
+        
       </div>
     </nav>
   );
