@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="absolute inset-0 md:hidden bg-hero-mobile bg-cover bg-center"></div>
       {/* <div className="absolute inset-0 bg-white opacity-80 mix-blend-multiply"></div> */}
 
-      {/* <div
+      <div
         className="container mx-auto relative z-10 flex flex-col items-center justify-center
                 md:flex md:flex-row md:items-center md:gap-16 px-6 -mt-8 md:-mt-16 border"
       >
@@ -71,11 +71,11 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
-      <div
+{/*       <div
         className="container mx-auto relative z-10 flex flex-col items-center justify-center
-                md:flex md:flex-row md:items-center md:gap-16 px-6 md-mt-12 md:-mt-20"
+                md:flex md:flex-row md:items-center md:gap-16 px-6 md:-mt-20"
       >
         <div
           data-aos="slide-right"
@@ -139,7 +139,7 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="md:hidden absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[calc(100%-48px)] h-[150px] pointer-events-none mb-6">
         <Image
