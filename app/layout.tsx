@@ -7,7 +7,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 // const inter = Inter({ subsets: ["latin"] }); // Replace with your actual font if different
-const montserrat = Montserrat({ subsets: ["latin"] }); 
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], variable:"--font-montserrat" }); 
 
 export const metadata: Metadata = {
   title: "P23 Africa - Gaining Knowledge Through Connection",

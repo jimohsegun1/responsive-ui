@@ -1,14 +1,31 @@
 import Link from "next/link";
+import Image from 'next/image';
+
 import { Linkedin, Facebook, Instagram, Youtube, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
-  const socialLinks = [
-    { name: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-    { name: "Facebook", href: "https://facebook.com", icon: Facebook },
-    { name: "Instagram", href: "https://instagram.com", icon: Instagram },
-    { name: "YouTube", href: "https://youtube.com", icon: Youtube },
+ const socialLinks = [
+    {
+      name: "LinkedIn",
+      icon: "/icons/linkedin.svg",
+      href: "#",
+      alt: "LinkedIn",
+    },
+    {
+      name: "Facebook",
+      icon: "/icons/facebook.svg",
+      href: "#",
+      alt: "Facebook",
+    },
+    {
+      name: "Instagram",
+      icon: "/icons/instagram.svg",
+      href: "#",
+      alt: "Instagram",
+    },
+    { name: "YouTube", icon: "/icons/youtube.svg", href: "#", alt: "YouTube" },
   ];
 
   return (
@@ -57,19 +74,23 @@ export function Footer() {
             <div>
               <h4 className=" text-base mb-4 font-gt-walsheim">Contact Us</h4>
               <div className="flex space-x-4">
-                {socialLinks.map(({ name, href, icon: Icon }) => (
-                  <Link
-                    key={name}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#C2E94E] p-2 rounded-md"
-                    aria-label={name}
-                  >
-                    <Icon className="w-5 h-5 text-[#013229]" />
-                  </Link>
-                ))}
-              </div>
+              {socialLinks.map((social) => (
+                <Link
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={social.icon}
+                    alt={social.alt}
+                    width={20}
+                    height={20}
+                    className="h-5 w-5 hover:opacity-80 transition-opacity"
+                  />
+                </Link>
+              ))}
+            </div>
             </div>
 
 
@@ -85,7 +106,7 @@ export function Footer() {
                   Subscribe <ArrowRight className="w-4 h-4" />
                 </Button>
               </div>
-              
+
             </div>
           </div>
 

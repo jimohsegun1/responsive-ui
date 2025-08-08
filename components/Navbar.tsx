@@ -21,23 +21,23 @@ export function Navbar() {
   const socialLinks = [
     {
       name: "LinkedIn",
-      icon: "/icons/linkedin.svg",
+      icon: "/navIcons/linkedin.svg",
       href: "#",
       alt: "LinkedIn",
     },
     {
       name: "Facebook",
-      icon: "/icons/facebook.svg",
+      icon: "/navIcons/facebook.svg",
       href: "#",
       alt: "Facebook",
     },
     {
       name: "Instagram",
-      icon: "/icons/instagram.svg",
+      icon: "/navIcons/instagram.svg",
       href: "#",
       alt: "Instagram",
     },
-    { name: "YouTube", icon: "/icons/youtube.svg", href: "#", alt: "YouTube" },
+    { name: "YouTube", icon: "/navIcons/youtube.svg", href: "#", alt: "YouTube" },
   ];
 
   const Logo = () => (
@@ -106,7 +106,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Navigation (Hamburger) */}
-        <div className="lg:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button
