@@ -75,7 +75,7 @@ export function HeroSection() {
 
       <div
         className="container mx-auto relative z-10 flex flex-col items-center justify-center
-                md:flex md:flex-row md:items-center md:gap-16 px-6 -mt-12 md:-mt-20"
+                md:flex md:flex-row md:items-center md:gap-16 px-6 md-mt-12 md:-mt-20"
       >
         <div
           data-aos="slide-right"
