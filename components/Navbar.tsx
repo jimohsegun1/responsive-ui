@@ -53,20 +53,22 @@ export function Navbar() {
   );
 
   return (
-    <nav className="bg-p23Green text-white py-4 px-6 md:px-12 shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-p23Green text-white py-4 md:py-9 md:h-32 shadow-md sticky top-0 z-50 w-full ">
+      <div className="container mx-auto flex items-center justify-between">
+        {/* Logo - Stays on the left */}
         <Link href="/">
           <Logo />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-6">
-          <ul className="flex space-x-14">
+        <div className="hidden lg:flex items-center justify-between gap-56">
+          {/* Navigation Links - Centered */}
+          <ul className="flex space-x-6 lg:space-x-10 md:mx-auto gap-3 ">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="text-sm leading-7 hover:text-p23Lime transition-colors whitespace-nowrap font-gt-walsheim"
+                  className="hover:text-p23Lime transition-colors whitespace-nowrap font-gt-walsheim font-light text-base leading-none tracking-normal"
                 >
                   {link.name}
                 </Link>
@@ -74,14 +76,15 @@ export function Navbar() {
             ))}
           </ul>
 
-          <div className="flex items-center space-x-6 flex-shrink-0">
+          {/* Subscribe Button and Social Icons - Stays on the right */}
+          <div className="flex items-center space-x-6 flex-shrink-0  ">
             <Button
               variant="outline"
-              className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-p23Green px-3 py-2 rounded-xl font-semibold text-xs flex items-center gap-2 ml-4 transition-colors transform hover:scale-105"
+              className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-p23Green  py-4 h-14 rounded-xl text-base font-light flex items-center transition-colors transform hover:scale-105"
             >
-              Subscribe <ArrowRight className="h-4 w-4" />
+              Subscribe 
             </Button>
-            <div className="flex space-x-3">
+            <div className=" space-x-4 hidden 2xl:flex">
               {socialLinks.map((social) => (
                 <Link
                   key={social.name}
@@ -103,7 +106,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile Navigation (Hamburger) */}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button
@@ -114,7 +117,6 @@ export function Navbar() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-
             <SheetContent
               side="right"
               className="bg-p23Green text-white w-full max-w-xs"
@@ -130,7 +132,6 @@ export function Navbar() {
                     {link.name}
                   </Link>
                 ))}
-
                 <div className="mt-8 w-full">
                   <Button
                     variant="default"
@@ -140,7 +141,6 @@ export function Navbar() {
                     Subscribe <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>
-
                 <div className="flex justify-center space-x-6 mt-6 w-full">
                   {socialLinks.map((social) => (
                     <Link
@@ -164,7 +164,6 @@ export function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
-        
       </div>
     </nav>
   );

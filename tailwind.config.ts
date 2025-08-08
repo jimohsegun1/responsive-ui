@@ -54,7 +54,7 @@ const config = {
         },
         // Custom colors based on UI
         p23Green: {
-          DEFAULT: '#1B4B3A', // Main dark green
+          DEFAULT: '#0D4036', // Main dark green
           light: '#366C56', // A slightly lighter variant used for some elements
           lime: '#C7E47C', // The lime green button/accent color
           dark: '#123225', // Even darker for footer background

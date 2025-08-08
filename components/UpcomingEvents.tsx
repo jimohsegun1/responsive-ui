@@ -81,19 +81,34 @@ const EventCard: React.FC<{
       : "text-gray-600";
 
   // a shadow class only if the index is defined and greater than 0
-  const shadowClass = typeof index === "number" && index > 0 ? "shadow-2xl" : "";
+  const shadowClass = typeof index === "number" && index > 0 ? "shadow-3xl" : "";
+  // const shadowClass= typeof index === "number" && index > 0 ? { boxShadow: "8px 8px 25px rgba(0, 0, 0, 0.7)" } : {};
   return (
     <div
       className={`rounded-2xl ${shadowClass} p-6 md:p-8 flex flex-col justify-between h-full ${bgClass} ${rotateClass}`}
     >
       <div>
-        {variant !== "transparent" && (
-          <CalendarDays className={`h-6 w-6 ${textColor}`} />
-        )}
-        <h3 className={`text-xl md:text-2xl font-bold mt-4 mb-2 ${textColor}`}>
-          {event.name}
-        </h3>
-        <p className={`text-sm md:text- leading-5 ${descColor} font-gt-walsheim`}>
+        <div className="flex items-center gap-2">
+
+
+          {variant !== "transparent" && (
+            <CalendarDays className={`h-6 w-6 ${textColor}`} />
+          )}
+          <h3 className={`text-xl md:text-xl font-extrabold ${textColor}`}>
+            {event.name}
+          </h3>
+        </div>
+
+        {/* <div className="flex items-center gap-2">
+          {variant !== "transparent" && (
+            <CalendarDays className={`h-6 w-6 ${textColor}`} />
+          )}
+          <h3 className={`text-xl md:text-2xl font-normal ${textColor}`}>
+            {event.name}
+          </h3>
+        </div> */}
+
+        <p className={`text-sm md:text- md:mt-3 leading-5 ${descColor} font-gt-walsheim ${variant === "transparent" ? "md:text-base" : ""}`}>
           {event.description}
         </p>
       </div>
@@ -143,6 +158,7 @@ export function UpcomingEvents() {
     <section className="relative py-16 md:py-24 bg-p23LightGray overflow-hidden">
       <div className="absolute md:block inset-0 bg-grainy mix-blend-multiply pointer-events-none" />
       <div className="container mx-auto relative z-10 px-4 sm:px-6 md:px-12">
+
         {/* Mobile Tabs */}
         <div className="md:hidden w-full mb-8">
           <Tabs
