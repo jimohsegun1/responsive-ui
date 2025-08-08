@@ -92,7 +92,7 @@ const EventCard: React.FC<{
 
 
           {variant !== "transparent" && (
-            <CalendarDays className={`h-6 w-6 ${textColor}`} />
+            <CalendarDays className={`h-12 w-12 ${textColor}`} />
           )}
           <h3 className={`text-xl md:text-xl font-extrabold ${textColor}`}>
             {event.name}
