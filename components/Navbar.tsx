@@ -53,17 +53,28 @@ export function Navbar() {
   );
 
   return (
+<<<<<<< HEAD
     <nav className="bg-p23Green text-white py-4 md:py-9 md:h-32 shadow-md sticky top-0 z-50 w-full ">
       <div className="container mx-auto flex items-center justify-between">
+=======
+    <nav className="bg-p23Green text-white py-4 px-6 md:px-12 md:py-9 md:h-32 shadow-md sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center">
+>>>>>>> 58e7ce3ab321b42e9a51ebc5445edef5822be94d
         {/* Logo - Stays on the left */}
         <Link href="/">
           <Logo />
         </Link>
 
         {/* Desktop Navigation */}
+<<<<<<< HEAD
         <div className="hidden lg:flex items-center justify-between gap-56">
           {/* Navigation Links - Centered */}
           <ul className="flex space-x-6 lg:space-x-10 md:mx-auto gap-3 ">
+=======
+        <div className="hidden md:flex items-center flex-1 justify-between">
+          {/* Navigation Links - Centered */}
+          <ul className="flex space-x-10 md:mx-auto gap-3">
+>>>>>>> 58e7ce3ab321b42e9a51ebc5445edef5822be94d
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
@@ -77,6 +88,7 @@ export function Navbar() {
           </ul>
 
           {/* Subscribe Button and Social Icons - Stays on the right */}
+<<<<<<< HEAD
           <div className="flex items-center space-x-6 flex-shrink-0  ">
             <Button
               variant="outline"
@@ -85,6 +97,16 @@ export function Navbar() {
               Subscribe 
             </Button>
             <div className=" space-x-4 hidden 2xl:flex">
+=======
+          <div className="flex items-center space-x-6 flex-shrink-0 ml-10">
+            <Button
+              variant="outline"
+              className="bg-transparent mr-4 text-white border-2 border-white hover:bg-white hover:text-p23Green px- py-4 h-14 rounded-xl text-base font-light flex items-center transition-colors transform hover:scale-105"
+            >
+              Subscribe 
+            </Button>
+            <div className="flex space-x-4 ml-12">
+>>>>>>> 58e7ce3ab321b42e9a51ebc5445edef5822be94d
               {socialLinks.map((social) => (
                 <Link
                   key={social.name}
